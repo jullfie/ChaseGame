@@ -2,12 +2,12 @@
 #define CHASEGAME_POINT2D_H
 
 
-class Point2D {
+class Point2D { //объявл класса
 
-private:
+private: //объявл закрытых переменных
     int x;
     int y;
-public:
+public: // объявл методы класса Point2D
     void initialize();
     void initialize(Point2D pos);
 
