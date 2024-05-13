@@ -1,5 +1,5 @@
 #include "Prey.h"
-#include <stdexcept>
+#include <stdexcept> //директива препроцессора, которая включает заголовочный файл <stdexcept>, содержащий определение стандартных исключений для C++
 
 void Prey::move(int type) {
     switch (type) {
