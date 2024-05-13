@@ -2,11 +2,11 @@
 #define CHASEGAME_MOVABLE_H
 
 
-class Movable {
+class Movable { //объявл класса Movable
 
 public:
     int type;
-    virtual void move(int type) = 0;
+    virtual void move(int type) = 0; // виртуальная функция move, класс с хотя бы одной чисто виртуальной функцией - абстрактный класс
 };
 
 
