@@ -1,36 +1,36 @@
-#ifndef CHASEGAME_ARENA_H
+#ifndef CHASEGAME_ARENA_H //проверка наличия определения символа CHASEGAME_ARENA_H
 #define CHASEGAME_ARENA_H
 
-
+// подключение заголов  файлов Prey, Predator и Character
 #include "Prey.h"
 #include "Predator.h"
 #include "Character.h"
 
-class Arena {
+class Arena { // определение класса Arena
 
 private:
-    int amountOfMove;
-    int size;
-    Character character,opponent;
+    int amountOfMove; // кол-во ходов
+    int size; // размер арены
+    Character character,opponent; // объекты персов
 public:
-    void setCharacter(const Character &character);
+    void setCharacter(const Character &character); // установить персонажа
 
-    void setAmountOfMove(int amountOfMove);
+    void setAmountOfMove(int amountOfMove);  // установить кол-во ходов
 
-    int getAmountOfMove();
+    int getAmountOfMove(); // получить кол-во ходов
 
-    Character getCharacter() const;
+    Character getCharacter() const; // получить персонажа (константный метод)
 
-    Character getOpponent() const;
+    Character getOpponent() const; // получить оппонента (константный метод)
 
     void setOpponent(const Character &opponent);
 
-    void showArena();
+    void showArena(); // отобразить арену
     
-    void moveCharacter(int type);
-    void moveCharacter(int type, int distance);
+    void moveCharacter(int type); // переместить перса
+    void moveCharacter(int type, int distance); // переместить перса на заданное расстояние
 
-    void moveOpponent();
+    void moveOpponent(); // переместить оппонента
 };
 
 
